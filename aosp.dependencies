@@ -2,8 +2,9 @@
   {
     "remote": "pixelextended-devices",
     "repository": "device_samsung_gts4lv-common",
-    "target_path": "device/samsung/gts4lv-common"
-  }
+    "target_path": "device/samsung/gts4lv-common",
+    "branch": "trece"
+  },
   {
     "remote": "pixelextended-devices",
     "repository": "kernel_samsung_sdm670",
@@ -12,20 +13,26 @@
   },
   {
     "remote": "github",
-    "repository": "TheMuppets/proprietary_vendor_samsung_gts4lv",
-    "target_path": "vendor/samsung/gts4lv",
+    "repository": "TheMuppets/proprietary_vendor_samsung_gts4lvwifi",
+    "target_path": "vendor/samsung/gts4lvwifi",
     "branch": "lineage-20"
   },
   {
-    "remote": "github",
-    "repository": "PixelExperience/hardware_samsung",
+    "remote": "pixelextended-devices",
+    "repository": "hardware_samsung",
     "target_path": "hardware/samsung",
-    "branch": "thirteen"
+    "branch": "trece"
   },
   {
     "remote": "github",
     "repository": "TheMuppets/proprietary_vendor_samsung_gts4lv-common",
     "target_path": "vendor/samsung/gts4lv-common",
     "branch": "lineage-20"
+  },
+  {
+    "remote": "github",
+    "repository": "LeafOS-Project/android_vendor_lineage_compat",
+    "target_path": "vendor/lineage/compat",
+    "branch": "leaf-2.0"
   }
 ]
