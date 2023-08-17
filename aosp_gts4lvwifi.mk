@@ -21,12 +21,18 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base.mk)
 # Inherit from gts4lvwifi device
 $(call inherit-product, device/samsung/gts4lvwifi/device.mk)
 
-# Inherit some common Lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_tablet_wifionly.mk)
+# Inherit some common Pex stuff.
+$(call inherit-product, vendor/aosp/config/common_full_tablet_wifionly.mk)
+TARGET_BOOT_ANIMATION_RES := 1080
+TARGET_GAPPS_ARCH := arm64
+FACE_UNLOCK_SUPPORTED := true
+TARGET_INCLUDE_LIVE_WALLPAPERS := true
+TARGET_SUPPORTS_QUICK_TAP := false
+TARGET_HAS_UDFPS := false
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := gts4lvwifi
-PRODUCT_NAME := lineage_gts4lvwifi
+PRODUCT_NAME := aosp_gts4lvwifi
 PRODUCT_BRAND := samsung
 PRODUCT_MODEL := SM-T720
 PRODUCT_MANUFACTURER := samsung
